@@ -1,11 +1,12 @@
 pipeline {
-    agent none 
+    agent{
+      dockerfile true 
+    }
     stages {
-        stage('Test'){
-            agent{ dockerfile true }
-            steps {
-                sh 'pip --version'
-                sh 'ansible --version'
+      stage('Test'){
+        steps {
+            sh 'pip --version'
+            sh 'ansible --version'
             }
         }
     }
