@@ -7,7 +7,7 @@ pipeline {
         }
         steps{
             git(
-                url: 'git@github.com:ShalomOdozi/jenkins-epa.git',
+                url: 'https://github.com/ShalomOdozi/jenkins-epa.git',
                 branch: "main"
             )
         }
